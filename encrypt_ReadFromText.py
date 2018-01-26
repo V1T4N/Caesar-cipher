@@ -4,7 +4,10 @@ import random
 import csv
 import string
 
-message = raw_input("Enter a messege >>>")
+
+f = open('text.txt')
+message = f.read()
+f.close()
 
 alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
@@ -35,3 +38,7 @@ for n in range(len(message)):
 message_mod = "".join(message_list_mod)
 
 print("Encrypted message is" + "[" + message_mod + "]" )
+
+f = open('encryptedText.txt', 'w')
+f.write(message_mod)
+f.close()
