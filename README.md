@@ -1,4 +1,4 @@
-#Simple substitution cipher
+# Simple substitution cipher
 
 単一換字式暗号を使って文字列を暗号化．復元する
 
